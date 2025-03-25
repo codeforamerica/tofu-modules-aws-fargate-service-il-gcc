@@ -18,3 +18,11 @@ output "repository_arn" {
 output "repository_url" {
   value = local.image_url
 }
+
+output "alb_dns_name" {
+  value = aws_lb.this[0].dns_name
+}
+
+output "alb_zone_id" {
+  value = aws_lb.this[0].zone_id
+}
